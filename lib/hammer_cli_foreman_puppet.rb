@@ -4,9 +4,11 @@ module HammerCLIForemanPuppet
 
   require 'hammer_cli_foreman_puppet/version'
   require 'hammer_cli_foreman_puppet/puppet_references'
+  require 'hammer_cli_foreman_puppet/commands'
   require 'hammer_cli_foreman_puppet/command_extensions'
   require 'hammer_cli_foreman_puppet/option_sources'
   require 'hammer_cli_foreman_puppet/associating_commands'
+  require 'hammer_cli_foreman_puppet/id_resolver'
 
   # Puppet commands
   require 'hammer_cli_foreman_puppet/smart_class_parameter'

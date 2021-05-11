@@ -3,7 +3,7 @@ module HammerCLIForemanPuppet
     module PuppetEnvironment
       extend HammerCLIForeman::AssociatingCommands::CommandExtension
 
-      class AddPuppetEnvironmentCommand < HammerCLIForeman::AddAssociatedCommand
+      class AddPuppetEnvironmentCommand < HammerCLIForemanPuppet::AddAssociatedCommand
         associated_resource :environments
         desc _('Associate a Puppet environment')
         command_name "add-environment"
@@ -14,7 +14,7 @@ module HammerCLIForemanPuppet
         extend_with(HammerCLIForemanPuppet::CommandExtensions::PuppetEnvironment.new)
       end
 
-      class RemovePuppetEnvironmentCommand < HammerCLIForeman::RemoveAssociatedCommand
+      class RemovePuppetEnvironmentCommand < HammerCLIForemanPuppet::RemoveAssociatedCommand
         associated_resource :environments
         desc _('Disassociate a Puppet environment')
         command_name "remove-environment"
