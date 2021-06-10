@@ -10,6 +10,7 @@ group :test do
   gem 'mocha'
   gem 'rake', '~> 10.1.0'
   gem 'simplecov'
+  gem 'rubocop', '1.16.0'
 end
 
 # load local gemfile
