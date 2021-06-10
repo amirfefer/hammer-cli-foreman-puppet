@@ -18,5 +18,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
   spec.test_files    = Dir['{test}/**/*']
 
+  spec.add_development_dependency 'rubocop', '1.16.0'
   # spec.add_dependency 'hammer_cli_foreman', '>= 2.0.0', '< 3.0.0'
 end
